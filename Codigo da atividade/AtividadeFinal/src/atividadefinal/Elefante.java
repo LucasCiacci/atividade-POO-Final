@@ -3,7 +3,7 @@ package atividadefinal;
 public class Elefante extends Animal implements Exibivel {
     private double peso;
 
-    public Elefante(double peso, String nome, int idade) {
+    public Elefante(String nome, int idade, double peso) {
         super(nome, idade, "Elefante");
         this.peso = peso;
     }

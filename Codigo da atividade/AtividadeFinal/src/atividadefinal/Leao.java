@@ -3,7 +3,7 @@ package atividadefinal;
 public class Leao extends Animal implements Exibivel {
     private String origem;
 
-    public Leao(String origem, String nome, int idade) {
+    public Leao(String nome, int idade, String origem) {
         super(nome, idade, "Leão");
         this.origem = origem;
     }

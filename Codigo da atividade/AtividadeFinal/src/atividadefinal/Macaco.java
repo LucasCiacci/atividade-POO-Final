@@ -3,7 +3,7 @@ package atividadefinal;
 public class Macaco extends Animal implements Exibivel {
     private String dieta;
 
-    public Macaco(String dieta, String nome, int idade) {
+    public Macaco(String nome, int idade, String dieta) {
         super(nome, idade, "Macaco");
         this.dieta = dieta;
     }

@@ -1,13 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package atividadefinal;
 
-/**
- *
- * @author USUARIO
- */
-public class Elefante {
+public class Elefante extends Animal implements Exibivel {
+    private double peso;
+
+    public Elefante(double peso, String nome, int idade) {
+        super(nome, idade, "Elefante");
+        this.peso = peso;
+    }
     
+    @Override
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + getNome());
+        System.out.println("Idade: " + getIdade());
+        System.out.println("Espécie: " + getEspecie());
+        System.out.println("Peso: " + peso + " kg");
+    }
 }

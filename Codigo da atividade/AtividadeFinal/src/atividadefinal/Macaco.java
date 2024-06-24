@@ -1,13 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package atividadefinal;
 
-/**
- *
- * @author USUARIO
- */
-public class Macaco {
+public class Macaco extends Animal implements Exibivel {
+    private String dieta;
+
+    public Macaco(String dieta, String nome, int idade) {
+        super(nome, idade, "Macaco");
+        this.dieta = dieta;
+    }
     
+    @Override
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + getNome());
+        System.out.println("Idade: " + getIdade());
+        System.out.println("Espécie: " + getEspecie());
+        System.out.println("Dieta: " + dieta);
+    }    
 }

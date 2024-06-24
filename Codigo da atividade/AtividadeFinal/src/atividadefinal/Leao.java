@@ -1,13 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package atividadefinal;
 
-/**
- *
- * @author USUARIO
- */
-public class Leao {
+public class Leao extends Animal implements Exibivel {
+    private String origem;
+
+    public Leao(String origem, String nome, int idade) {
+        super(nome, idade, "Leão");
+        this.origem = origem;
+    }
     
+    @Override
+    public void exibirInformacoes(){
+        System.out.println("Nome: " + getNome());
+        System.out.println("Idade: " + getIdade());
+        System.out.println("Espécie: " + getEspecie());
+        System.out.println("Origem: " + origem);
+    }
 }
